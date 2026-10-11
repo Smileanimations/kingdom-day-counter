@@ -1,0 +1,11 @@
+{
+    "kingdom_day": {
+      "category": "ambient",
+      "sounds": [
+        "kingdom-day-counter:newday"
+      ],
+      "subtitles": [
+        "kingdom-day-counter:newday"
+      ]
+    }
+}
