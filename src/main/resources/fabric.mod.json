@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "kingdom-day-counter",
+	"version": "${version}",
+	"name": "Kingdom Day Counter",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/kingdom-day-counter/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"name.modid.KingdomDayCounter"
+		],
+		"client": [
+			"name.modid.client.KingdomDayCounterClient"
+		]
+	},
+	"mixins": [
+		"kingdom-day-counter.mixins.json",
+		{
+			"config": "kingdom-day-counter.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
